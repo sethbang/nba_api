@@ -1,0 +1,182 @@
+site_name: nba_api
+theme:
+  name: material
+  palette:
+    scheme: slate
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Basics: examples/Basics.ipynb
+      - LiveData: examples/LiveData.ipynb
+      - PlayByPlay: examples/PlayByPlay.ipynb
+      - Finding Games: examples/Finding Games.ipynb
+      - Home Team Win-Loss Modeling:
+          - Data Preparation: examples/Home Team Win-Loss Modeling/Home Team Win-Loss Data Prep.ipynb
+          - Modeling: examples/Home Team Win-Loss Modeling/Home Team Win-Loss Modeling.ipynb
+  - API Documentation:
+      - Debugging: nba_api/debug.md
+      - Live Endpoints:
+          - Boxscore: nba_api/live/endpoints/boxscore.md
+          - PlayByPlay: nba_api/live/endpoints/playbyplay.md
+          - Scoreboard: nba_api/live/endpoints/scoreboard.md
+      - Stats:
+          - Endpoints Data Structure: nba_api/stats/endpoints_data_structure.md
+          - Examples: nba_api/stats/examples.md
+          - Library:
+              - Data: nba_api/stats/library/data.md
+              - HTTP: nba_api/stats/library/http.md
+              - Parameters: nba_api/stats/library/parameters.md
+          - Static:
+              - Players: nba_api/stats/static/players.md
+              - Teams: nba_api/stats/static/teams.md
+          - Tools:
+              - Endpoint Analysis: nba_api/tools/stats/endpoint_analysis/analysis.md
+              - Endpoint Documentation Generator: nba_api/tools/stats/endpoint_documentation_generator/generator.md
+              - Endpoint Py File Generator: nba_api/tools/stats/endpoint_py_file_generator/generator.md
+              - Input Output Definitions: nba_api/tools/stats/input_output_definitions.md
+              - Parameter Documentation Generator: nba_api/tools/stats/parameter_documentation_generator/generator.md
+      - More Stats Endpoints:
+          - All Time Leaders Grids: nba_api/stats/endpoints/alltimeleadersgrids.md
+          - Assist Leaders: nba_api/stats/endpoints/assistleaders.md
+          - Assist Tracker: nba_api/stats/endpoints/assisttracker.md
+          - Box Score Advanced V2: nba_api/stats/endpoints/boxscoreadvancedv2.md
+          - Box Score Advanced V3: nba_api/stats/endpoints/boxscoreadvancedv3.md
+          - Box Score Defensive V2: nba_api/stats/endpoints/boxscoredefensivev2.md
+          - Box Score Four Factors V2: nba_api/stats/endpoints/boxscorefourfactorsv2.md
+          - Box Score Four Factors V3: nba_api/stats/endpoints/boxscorefourfactorsv3.md
+          - Box Score Hustle V2: nba_api/stats/endpoints/boxscorehustlev2.md
+          - Box Score Matchups V3: nba_api/stats/endpoints/boxscorematchupsv3.md
+          - Box Score Miscellaneous V2: nba_api/stats/endpoints/boxscoremiscv2.md
+          - Box Score Miscellaneous V3: nba_api/stats/endpoints/boxscoremiscv3.md
+          - Box Score Player Track V2: nba_api/stats/endpoints/boxscoreplayertrackv2.md
+          - Box Score Player Track V3: nba_api/stats/endpoints/boxscoreplayertrackv3.md
+          - Box Score Scoring V2: nba_api/stats/endpoints/boxscorescoringv2.md
+          - Box Score Scoring V3: nba_api/stats/endpoints/boxscorescoringv3.md
+          - Box Score Similarity Score: nba_api/stats/endpoints/boxscoresimilarityscore.md
+          - Box Score Traditional V2: nba_api/stats/endpoints/boxscoretraditionalv2.md
+          - Box Score Traditional V3: nba_api/stats/endpoints/boxscoretraditionalv3.md
+          - Box Score Usage V2: nba_api/stats/endpoints/boxscoreusagev2.md
+          - Box Score Usage V3: nba_api/stats/endpoints/boxscoreusagev3.md
+          - Common All Players: nba_api/stats/endpoints/commonallplayers.md
+          - Common Player Info: nba_api/stats/endpoints/commonplayerinfo.md
+          - Common Team Roster: nba_api/stats/endpoints/commonteamroster.md
+          - Common Team Years: nba_api/stats/endpoints/commonteamyears.md
+          - Common Playoff Series: nba_api/stats/endpoints/commonplayoffseries.md
+          - Cumulative Player Stats: nba_api/stats/endpoints/cumestatsplayer.md
+          - Cumulative Player Games: nba_api/stats/endpoints/cumestatsplayergames.md
+          - Cumulative Team Stats: nba_api/stats/endpoints/cumestatsteam.md
+          - Cumulative Team Games: nba_api/stats/endpoints/cumestatsteamgames.md
+          - Defense Hub: nba_api/stats/endpoints/defensehub.md
+          - Draft Combine Drill Results: nba_api/stats/endpoints/draftcombinedrillresults.md
+          - Draft Combine Non-Stationary Shooting: nba_api/stats/endpoints/draftcombinenonstationaryshooting.md
+          - Draft Combine Player Anthro: nba_api/stats/endpoints/draftcombineplayeranthro.md
+          - Draft Combine Spot Shooting: nba_api/stats/endpoints/draftcombinespotshooting.md
+          - Draft Combine Stats: nba_api/stats/endpoints/draftcombinestats.md
+          - Draft History: nba_api/stats/endpoints/drafthistory.md
+          - Fantasy Widget: nba_api/stats/endpoints/fantasywidget.md
+          - Franchise History: nba_api/stats/endpoints/franchisehistory.md
+          - Franchise Leaders: nba_api/stats/endpoints/franchiseleaders.md
+          - Franchise Players: nba_api/stats/endpoints/franchiseplayers.md
+          - Game Rotation: nba_api/stats/endpoints/gamerotation.md
+          - GL Alumni Box Score Similarity Score: nba_api/stats/endpoints/glalumboxscoresimilarityscore.md
+          - Hustle Stats Box Score: nba_api/stats/endpoints/hustlestatsboxscore.md
+          - Infographic Fan Duel Player: nba_api/stats/endpoints/infographicfanduelplayer.md
+          - IST Standings: nba_api/stats/endpoints/iststandings.md
+          - League Dash Lineups: nba_api/stats/endpoints/leaguedashlineups.md
+          - League Dash Opponent PT Shot: nba_api/stats/endpoints/leaguedashoppptshot.md
+          - League Dash Player Bio Stats: nba_api/stats/endpoints/leaguedashplayerbiostats.md
+          - League Dash Player Clutch: nba_api/stats/endpoints/leaguedashplayerclutch.md
+          - League Dash Player PT Shot: nba_api/stats/endpoints/leaguedashplayerptshot.md
+          - League Dash Player Shot Locations: nba_api/stats/endpoints/leaguedashplayershotlocations.md
+          - League Dash Player Stats: nba_api/stats/endpoints/leaguedashplayerstats.md
+          - League Dash PT Defend: nba_api/stats/endpoints/leaguedashptdefend.md
+          - League Dash PT Stats: nba_api/stats/endpoints/leaguedashptstats.md
+          - League Dash PT Team Defend: nba_api/stats/endpoints/leaguedashptteamdefend.md
+          - League Dash Team Clutch: nba_api/stats/endpoints/leaguedashteamclutch.md
+          - League Dash Team PT Shot: nba_api/stats/endpoints/leaguedashteamptshot.md
+          - League Dash Team Shot Locations: nba_api/stats/endpoints/leaguedashteamshotlocations.md
+          - League Dash Team Stats: nba_api/stats/endpoints/leaguedashteamstats.md
+          - League Game Finder: nba_api/stats/endpoints/leaguegamefinder.md
+          - League Game Log: nba_api/stats/endpoints/leaguegamelog.md
+          - League Hustle Stats Player: nba_api/stats/endpoints/leaguehustlestatsplayer.md
+          - League Hustle Stats Team: nba_api/stats/endpoints/leaguehustlestatsteam.md
+          - League Leaders: nba_api/stats/endpoints/leagueleaders.md
+          - League Lineup Viz: nba_api/stats/endpoints/leaguelineupviz.md
+          - League Season Matchups: nba_api/stats/endpoints/leagueseasonmatchups.md
+          - League Standings: nba_api/stats/endpoints/leaguestandings.md
+          - League Standings V3: nba_api/stats/endpoints/leaguestandingsv3.md
+          - Leader Tiles: nba_api/stats/endpoints/leaderstiles.md
+          - Matchups Rollup: nba_api/stats/endpoints/matchupsrollup.md
+          - Player Awards: nba_api/stats/endpoints/playerawards.md
+          - Player Career By College: nba_api/stats/endpoints/playercareerbycollege.md
+          - Player Career By College Rollup: nba_api/stats/endpoints/playercareerbycollegerollup.md
+          - Player Career Stats: nba_api/stats/endpoints/playercareerstats.md
+          - Player Compare: nba_api/stats/endpoints/playercompare.md
+          - Player Dashboard By Clutch: nba_api/stats/endpoints/playerdashboardbyclutch.md
+          - Player Dashboard By Game Splits: nba_api/stats/endpoints/playerdashboardbygamesplits.md
+          - Player Dashboard By General Splits: nba_api/stats/endpoints/playerdashboardbygeneralsplits.md
+          - Player Dashboard By Last N Games: nba_api/stats/endpoints/playerdashboardbylastngames.md
+          - Player Dashboard By Shooting Splits: nba_api/stats/endpoints/playerdashboardbyshootingsplits.md
+          - Player Dashboard By Team Performance: nba_api/stats/endpoints/playerdashboardbyteamperformance.md
+          - Player Dashboard By Year Over Year: nba_api/stats/endpoints/playerdashboardbyyearoveryear.md
+          - Player Dash PT Pass: nba_api/stats/endpoints/playerdashptpass.md
+          - Player Dash PT Reb: nba_api/stats/endpoints/playerdashptreb.md
+          - Player Dash PT Shot Defend: nba_api/stats/endpoints/playerdashptshotdefend.md
+          - Player Dash PT Shots: nba_api/stats/endpoints/playerdashptshots.md
+          - Player Estimated Metrics: nba_api/stats/endpoints/playerestimatedmetrics.md
+          - Player Fantasy Profile: nba_api/stats/endpoints/playerfantasyprofile.md
+          - Player Fantasy Profile Bar Graph: nba_api/stats/endpoints/playerfantasyprofilebargraph.md
+          - Player Game Logs: nba_api/stats/endpoints/playergamelogs.md
+          - Player Game Log: nba_api/stats/endpoints/playergamelog.md
+          - Player Game Streak Finder: nba_api/stats/endpoints/playergamestreakfinder.md
+          - Player Index: nba_api/stats/endpoints/playerindex.md
+          - Player Next N Games: nba_api/stats/endpoints/playernextngames.md
+          - Player Profile V2: nba_api/stats/endpoints/playerprofilev2.md
+          - Player Vs Player: nba_api/stats/endpoints/playervsplayer.md
+          - Playoff Picture: nba_api/stats/endpoints/playoffpicture.md
+          - Scoreboard: nba_api/stats/endpoints/scoreboard.md
+          - Scoreboard V2: nba_api/stats/endpoints/scoreboardv2.md
+          - Shot Chart Detail: nba_api/stats/endpoints/shotchartdetail.md
+          - Shot Chart League Wide: nba_api/stats/endpoints/shotchartleaguewide.md
+          - Shot Chart Lineup Detail: nba_api/stats/endpoints/shotchartlineupdetail.md
+          - Synergy Play Types: nba_api/stats/endpoints/synergyplaytypes.md
+          - Team and Players Vs Players: nba_api/stats/endpoints/teamandplayersvsplayers.md
+          - Team Dashboard By General Splits: nba_api/stats/endpoints/teamdashboardbygeneralsplits.md
+          - Team Dashboard By Shooting Splits: nba_api/stats/endpoints/teamdashboardbyshootingsplits.md
+          - Team Dash Lineups: nba_api/stats/endpoints/teamdashlineups.md
+          - Team Dash PT Pass: nba_api/stats/endpoints/teamdashptpass.md
+          - Team Dash PT Reb: nba_api/stats/endpoints/teamdashptreb.md
+          - Team Dash PT Shots: nba_api/stats/endpoints/teamdashptshots.md
+          - Team Details: nba_api/stats/endpoints/teamdetails.md
+          - Team Estimated Metrics: nba_api/stats/endpoints/teamestimatedmetrics.md
+          - Team Game Log: nba_api/stats/endpoints/teamgamelog.md
+          - Team Game Logs: nba_api/stats/endpoints/teamgamelogs.md
+          - Team Game Streak Finder: nba_api/stats/endpoints/teamgamestreakfinder.md
+          - Team Historical Leaders: nba_api/stats/endpoints/teamhistoricalleaders.md
+          - Team Info Common: nba_api/stats/endpoints/teaminfocommon.md
+          - Team Player Dashboard: nba_api/stats/endpoints/teamplayerdashboard.md
+          - Team Player On Off Details: nba_api/stats/endpoints/teamplayeronoffdetails.md
+          - Team Player On Off Summary: nba_api/stats/endpoints/teamplayeronoffsummary.md
+          - Team Vs Player: nba_api/stats/endpoints/teamvsplayer.md
+          - Team Year By Year Stats: nba_api/stats/endpoints/teamyearbyyearstats.md
+          - Video Details: nba_api/stats/endpoints/videodetails.md
+          - Video Details Asset: nba_api/stats/endpoints/videodetailsasset.md
+          - Video Events: nba_api/stats/endpoints/videoevents.md
+          - Video Status: nba_api/stats/endpoints/videostatus.md
+          - Win Probability PBP: nba_api/stats/endpoints/winprobabilitypbp.md
+
+      - Tools:
+          - Endpoint Analysis: nba_api/tools/stats/endpoint_analysis/analysis.md
+          - Endpoint Documentation Generator: nba_api/tools/stats/endpoint_documentation_generator/generator.md
+          - Endpoint Py File Generator: nba_api/tools/stats/endpoint_py_file_generator/generator.md
+          - Input Output Definitions: nba_api/tools/stats/input_output_definitions.md
+          - Parameter Documentation Generator: nba_api/tools/stats/parameter_documentation_generator/generator.md
+
+      - Additional Information:
+          - Package Structure: package_structure.md
+          - Scripts: scripts.md
+          - Table of Contents: table_of_contents.md
+          - Version Log: version_log.md
+plugins:
+  - search
+  - mknotebooks
