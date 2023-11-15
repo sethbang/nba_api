@@ -16,6 +16,7 @@ nav:
   - API Documentation:
       - Debugging: nba_api/debug.md
       - Live Endpoints:
+          - Complete Endpoints Doc: nba_api/live/endpoints/nba_live_endpoints.md
           - Boxscore: nba_api/live/endpoints/boxscore.md
           - PlayByPlay: nba_api/live/endpoints/playbyplay.md
           - Scoreboard: nba_api/live/endpoints/scoreboard.md
@@ -35,7 +36,8 @@ nav:
               - Endpoint Py File Generator: nba_api/tools/stats/endpoint_py_file_generator/generator.md
               - Input Output Definitions: nba_api/tools/stats/input_output_definitions.md
               - Parameter Documentation Generator: nba_api/tools/stats/parameter_documentation_generator/generator.md
-      - More Stats Endpoints:
+      - Stats Endpoints:
+          - Complete Endpoints Doc: nba_api/stats/endpoints/nba_stats_endpoints.md
           - All Time Leaders Grids: nba_api/stats/endpoints/alltimeleadersgrids.md
           - Assist Leaders: nba_api/stats/endpoints/assistleaders.md
           - Assist Tracker: nba_api/stats/endpoints/assisttracker.md
